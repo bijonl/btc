@@ -1,0 +1,88 @@
+{
+    "key": "group_687c0ea760483",
+    "title": "Section Padding",
+    "fields": [
+        {
+            "key": "field_687c0ea794719",
+            "label": "Top Section Padding",
+            "name": "top_section_padding",
+            "aria-label": "",
+            "type": "button_group",
+            "instructions": "This controls the space above the section. There’s a standard amount added by default. If you want to remove that space, just toggle this off.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "standard": "Standard",
+                "none": "None"
+            },
+            "default_value": "standard",
+            "return_format": "value",
+            "allow_null": 0,
+            "allow_in_bindings": 0,
+            "layout": "horizontal"
+        },
+        {
+            "key": "field_687c0ee39471a",
+            "label": "Bottom Section Padding",
+            "name": "bottom_section_padding",
+            "aria-label": "",
+            "type": "button_group",
+            "instructions": "This controls the space below the section. There’s a standard amount added by default. If you want to remove that space, just toggle this off.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "standard": "Standard",
+                "none": "None"
+            },
+            "default_value": "standard",
+            "return_format": "value",
+            "allow_null": 0,
+            "allow_in_bindings": 0,
+            "layout": "horizontal"
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "block",
+                "operator": "==",
+                "value": "all"
+            },
+            {
+                "param": "block",
+                "operator": "!=",
+                "value": "acf\/photo-divider"
+            },
+            {
+                "param": "block",
+                "operator": "!=",
+                "value": "acf\/homepage-hero"
+            },
+            {
+                "param": "block",
+                "operator": "!=",
+                "value": "acf\/interior-hero"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "show_in_rest": 0,
+    "modified": 1755701684
+}

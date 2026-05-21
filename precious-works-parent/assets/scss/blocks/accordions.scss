@@ -1,0 +1,57 @@
+
+.accordions-container {
+    .accordions-row {
+        .accordions-col {
+            .single-accordion {
+                border: $accordion-border;
+                margin-bottom: 20px;
+                color: inherit;
+                overflow: hidden; // keeps content neat
+
+                // Accordion button
+                .accordion {
+                    width: 100%;
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    background: none;
+                    border: 0;
+                    outline: none;
+                    padding: $accordion-padding;
+                    font-size: 1rem;
+                    text-align: left;
+                    cursor: pointer;
+                    transition: background-color $accordion-transition;
+
+                    &:hover {
+                        background-color: lighten($color-secondary, 45%);
+                    }
+
+                    // icon rotation skeleton
+                    svg {
+                    transition: transform $accordion-transition;
+                    }
+
+                    &.is-open {
+                    svg {
+                        transform: rotate(180deg);
+                    }
+                    }
+                }
+
+                // Accordion content
+                .accordion-content {
+                    max-height: 0;
+                    overflow: hidden;
+                    padding: 0 $accordion-padding; // horizontal only
+                    transition: max-height $accordion-transition, padding $accordion-transition;
+
+                    // when open (via inline JS height)
+                    &.is-open {
+                    padding: $accordion-padding; // add vertical padding once open
+                    }
+                }
+            }       
+        }
+    }
+}

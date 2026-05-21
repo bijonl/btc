@@ -1,0 +1,109 @@
+{
+    "key": "group_687bfe36b2cd3",
+    "title": "Block Section Button",
+    "fields": [
+        {
+            "key": "field_687bfe37b2042",
+            "label": "Block Section Button",
+            "name": "",
+            "aria-label": "",
+            "type": "accordion",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "open": 0,
+            "multi_expand": 0,
+            "endpoint": 0
+        },
+        {
+            "key": "field_687bff2db2043",
+            "label": "Section Button",
+            "name": "section_button",
+            "aria-label": "",
+            "type": "link",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "array",
+            "allow_in_bindings": 0
+        },
+        {
+            "key": "field_687bff62b2045",
+            "label": "Section Button Aria Label",
+            "name": "section_button_aria_label",
+            "aria-label": "",
+            "type": "text",
+            "instructions": "This label helps screen readers (tools used by people with difficulty seeing) understand the button. Please write a short, clear description of what the button does. This won’t change how the button looks on the page. It’s a simple and kind way to make your site easier for everyone to use!",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "maxlength": "",
+            "allow_in_bindings": 0,
+            "placeholder": "",
+            "prepend": "",
+            "append": ""
+        },
+        {
+            "key": "field_687bff4db2044",
+            "label": "Block Section Button (End)",
+            "name": "",
+            "aria-label": "",
+            "type": "accordion",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "open": 0,
+            "multi_expand": 0,
+            "endpoint": 1
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "block",
+                "operator": "==",
+                "value": "all"
+            },
+            {
+                "param": "block",
+                "operator": "!=",
+                "value": "acf\/photo-divider"
+            },
+            {
+                "param": "block",
+                "operator": "!=",
+                "value": "acf\/form-block"
+            }
+        ]
+    ],
+    "menu_order": 2,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "show_in_rest": 0,
+    "modified": 1752963151
+}

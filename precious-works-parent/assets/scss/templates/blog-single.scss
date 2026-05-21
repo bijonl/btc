@@ -1,0 +1,95 @@
+.single-blog-post-section {
+    padding-top: 60px; 
+    padding-bottom: 60px; 
+    .single-blog-hero-container {
+        padding-bottom: 50px; 
+        .single-blog-hero-row {
+            .single-blog-hero-col {
+                .post-meta-wrapper {
+                    text-align: center;
+                    padding-bottom: 30px; 
+                    p {
+                        font-size: 1.2rem; 
+
+                    }
+                    .author-wrapper {
+                        padding-top: 15px; 
+                    }
+
+                    .date-wrapper {
+                        padding-top: 15px; 
+                    }
+
+                    .term-wrapper {
+                        justify-content: center; 
+                    }
+
+                    @import '../components/partials/term-list-blog.scss';
+
+                }
+
+                 .blog-image-wrapper {
+                    img {
+                        width: 75%; 
+                        height: auto; 
+                        display: flex; 
+                        margin-left: auto; 
+                        margin-right: auto; 
+                        @include media-breakpoint-down(sm) {
+                            width: 100%; 
+                        }
+                    }
+                }
+            }
+        }
+
+       
+
+    }
+
+    .single-blog-post-container  {
+        .single-blog-post-row {
+            .single-blog-post-col {
+                .post-excerpt {
+                    font-size: 1.5rem; 
+                    padding-bottom: 30px; 
+                }
+                .post-footer {
+                    padding-top: 30px; 
+                    padding-bottom: 30px; 
+                    margin-top: 50px; 
+                    border-top: solid 1px black; 
+                    border-bottom: solid 1px black; 
+                    h6 {
+                    }
+                    .social-share-list {
+                        padding-top: 25px; 
+                        width: 50%;
+                        list-style: none;
+                        margin-left: 0; 
+                        display: flex; 
+                        justify-content: space-between;
+                        @include media-breakpoint-down(sm) {
+                            width: 100%; 
+                        }
+                        a {
+                            color: inherit; 
+                            i {
+                                font-size: 24px; 
+                                color: inherit; 
+                            }
+                            &:hover {
+                                color: rgb(0, 76.5, 153); 
+                            }
+
+                        }
+                       
+                    }
+
+                }
+            }
+        }
+    }
+
+    
+}

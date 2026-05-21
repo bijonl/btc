@@ -1,0 +1,72 @@
+// Core Colors
+$color-primary:         #333333;
+$color-secondary:       #666666;
+$color-background:      #ffffff;
+$color-muted-bg:        #f7f7f7;
+$color-accent:          #0077cc;
+$color-accent-hover:    #005fa3;
+
+// Feedback Colors
+$color-error:           #cc0000;
+$color-success:         #2e7d32;
+
+// Font Variables
+$font-primary: 'Inter', sans-serif;
+$font-secondary: 'Georgia', serif;
+$heading-font: $font-primary; 
+$body-text-font: $font-secondary; 
+$paragraph-font: $font-secondary; 
+$base-font-size: 16px; 
+$line-height-base: 1.6;
+
+// Text Colors
+$base-text-color: #222; 
+$heading-font-color: #222; 
+$link-color: #0066cc; 
+$color-muted: #666;
+$link-hover-color: #222; 
+
+// Background Colors
+$body-background: white; 
+$primary-background-color: red; 
+$primary-background-text-color: black; 
+$secondary-background-color: red; 
+$secondary-background-text-color: black; 
+
+// Button Variables
+$solid-button-background: $color-primary; 
+$solid-button-border-color: $color-primary; 
+$solid-button-text-color: $color-background; 
+$solid-button-padding-horizontal: 16px;
+$solid-button-padding-vertical: 12px;
+$solid-button-border-radius: 30px; 
+$solid-button-min-width: 200px; 
+
+$solid-button-background-hover: $color-background; 
+$solid-button-text-color-hover: $color-primary; 
+$solid-button-border-color-hover: $color-primary; 
+
+// Footer Variables
+$footer-padding: 30px; 
+$footer-background-color: black; 
+$footer-color: white; 
+
+// ===============================
+// Header Variables
+// ===============================
+$header-background: white;
+$header-logo-width: 65px;
+$header-logo-height: auto;
+$header-link-color: inherit;
+$header-mobile-menu-bg: #eceff1;
+$header-mobile-menu-hover-bg: #cfd8dc;
+$header-mobile-menu-link-color: #333;
+$hamburger-bar-color: #616161;
+$hamburger-width: 26px;
+$hamburger-height: 26px;
+$hamburger-spacing: 8px;
+$menu-slide-width: 300px;
+$menu-z-index: 6;
+$hamburger-z-index: 7;
+
+

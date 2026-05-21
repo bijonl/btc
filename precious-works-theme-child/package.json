@@ -1,0 +1,12 @@
+{
+    "name": "precious-works",
+    "version": "1.0.0",
+    "scripts": {
+      "build-scss": "sass assets/scss/main.scss assets/dist/css/style.min.css --style=compressed && sass ../parent-theme/assets/scss/main.scss ../parent-theme/assets/dist/css/style.min.css --style=compressed",
+      "scss-watch": "sass --watch assets/scss/main.scss:assets/dist/css/style.min.css ../parent-theme/assets/scss/main.scss:../parent-theme/assets/dist/css/style.min.css"
+    },
+    "devDependencies": {
+      "sass": "^1.69.5"
+    }
+  }
+  

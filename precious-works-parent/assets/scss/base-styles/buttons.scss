@@ -1,0 +1,32 @@
+.pw-solid-button {
+    // @extend .u-focus-style;
+    display: inline-block;
+    background-color: $solid-button-background;
+    border: solid 1px $solid-button-border-color; 
+    color: $solid-button-text-color; 
+    line-height: 1; 
+    border-radius: $solid-button-border-radius;  
+    font-weight: 400;
+    min-width: 200px; 
+    transition: all 0.2s ease-in-out; 
+    padding-left: $solid-button-padding-horizontal; 
+    padding-right: $solid-button-padding-horizontal;
+    padding-top: $solid-button-padding-vertical; 
+    padding-bottom: $solid-button-padding-vertical; 
+    text-decoration: none; 
+    &:hover,  &:focus,
+    &:focus-visible {
+        font-weight: 600;
+        border-radius: $solid-button-border-radius;  
+        background-color: $solid-button-background-hover; 
+        color: $solid-button-text-color-hover; 
+        border: solid 1px $solid-button-border-color-hover; 
+        text-decoration: none;
+    }
+    &:focus,
+    &:focus-visible {
+        outline: none;
+        box-shadow: 0 0 0 3px rgba(0, 119, 204, 0.4);
+        border-radius: $solid-button-border-radius;
+    }
+}

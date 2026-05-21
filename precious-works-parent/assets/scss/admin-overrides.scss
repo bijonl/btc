@@ -1,0 +1,51 @@
+.media-frame-title h1 {
+    padding: 0 16px;
+    color: black !important;
+    font-size: 22px !important;
+    font-family: inherit !important;
+    line-height: 2.27272727 !important;
+    margin: 0 !important;
+}
+
+#link-modal-title, #link-selector {
+  color: black;
+  font-family: inherit!important; 
+}
+
+.media-attachments-filter-heading {
+  color: black; 
+}
+
+.image-details .media-embed h2, .media-sidebar h2 {
+    position: relative!important;
+    font-weight: 600!important;
+    font-family: inherit!important;
+    text-transform: uppercase;
+    font-size: 12px!important;
+    color: #646970!important;
+    margin: 24px 0 8px!important;
+}
+
+// Classes to exclude from headings
+$heading-exclusions: 
+  ".components-panel__body-title",
+  ".components-text",
+  ".media-attachments-filter-heading", 
+  ".block-editor-inserter__panel-title",
+  ".hndle.ui-sortable-handle", 
+  ".block-editor-block-card__title";
+
+// Helper: turn list into :not() string
+@function not-selectors($list) {
+  $result: "";
+  @each $item in $list {
+    $result: "#{$result}:not(#{$item})";
+  }
+  @return $result;
+}
+
+.media-modal .media-frame .media-search-input-label {
+  color: black; 
+}
+
+$exclude: not-selectors($heading-exclusions);

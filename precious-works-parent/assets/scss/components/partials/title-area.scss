@@ -1,0 +1,26 @@
+$title-area-wrapper-spacing: 60px; 
+$big-title-spacing: 15px; 
+$button-row-spacing: 30px; 
+
+.title-area-container {
+    .title-area-row {
+        .title-area-col {
+            .title-area-content-wrapper {
+                padding-bottom: $title-area-wrapper-spacing; 
+                .title-wrapper {
+
+                }
+                .subtitle-wrapper {
+                    padding-top: $big-title-spacing; 
+                    p {
+                        margin-bottom: 0; 
+                    }
+                }
+            }
+        }
+    }
+}
+
+.button-row {
+    margin-top: 30px; 
+}

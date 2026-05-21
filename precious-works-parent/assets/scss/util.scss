@@ -1,0 +1,81 @@
+.wysiwyg {
+    p:last-child {
+        margin-bottom: 0; 
+    }
+}
+
+.nav-list-style {
+    list-style: none;
+    margin-left: 0; 
+    margin-bottom: 0;
+    display: flex; 
+    align-items: center;
+    &.column-list {
+        flex-direction: column;
+    }
+    li {
+        line-height: 1;
+        margin-bottom: 0; 
+        a {
+            text-decoration: none;
+            color: inherit; 
+        }
+    }
+}
+
+.rounded-corners {
+    border-radius: 12px; 
+}
+
+.color-inherit {
+    color: inherit; 
+}
+
+.background-primary {
+    color: $primary-background-text-color; 
+    background-color: $primary-background-color; 
+}
+
+.background-secondary {
+    color: $secondary-background-text-color; 
+    background-color: $secondary-background-color; 
+}
+
+.heading-font {
+    font-family: $heading-font;
+}
+
+.body-text-font {
+    font-family: $body-text-font;
+}
+
+.u-focus-style {
+  &:focus,
+  &:focus-visible {
+    outline: none;
+    box-shadow: 0 0 0 3px rgba($color-accent, 0.4);
+    border-radius: inherit; // respects rounded elements
+  }
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0,0,0,0);
+    white-space: nowrap;
+    border: 0;
+}
+
+

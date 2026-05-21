@@ -1,0 +1,15 @@
+.site-footer {
+    padding-top: $footer-padding; 
+    padding-bottom: $footer-padding; 
+    background-color: $footer-background-color; 
+    color: $footer-color; 
+    .site-footer-content-container {
+        .site-footer-content-row {
+            @import './partials/social-list'; 
+            .footer-logo-wrapper {
+                max-width: 100px; 
+            }
+        
+        }
+    }
+}

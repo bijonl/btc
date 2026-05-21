@@ -1,0 +1,10 @@
+.image-gallery-col {
+    .glightbox:focus {
+        outline: 3px solid #005fcc;
+        outline-offset: 2px;
+    }
+    img {
+        padding-top: 12px; 
+        padding-bottom: 12px;  
+    }
+}
