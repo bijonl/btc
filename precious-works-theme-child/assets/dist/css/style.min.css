@@ -7674,6 +7674,14 @@ small, .small {
   line-height: normal;
 }
 
+.media-text-col {
+  padding-left: 45px;
+}
+
+.media-col {
+  margin-bottom: -6.59px;
+}
+
 .recent-posts-section .recent-posts-container .recent-posts-row .recent-posts-col .single-post-tile .single-post-image-wrapper {
   padding-bottom: 20px;
 }
