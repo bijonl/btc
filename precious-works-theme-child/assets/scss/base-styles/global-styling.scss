@@ -1,0 +1,25 @@
+
+
+body {
+  background-color: $body-background; 
+  font-family: $font-primary;
+  font-size: $base-font-size; 
+  line-height: $line-height-base;
+  color: $base-text-color; 
+}
+
+
+.block-section {
+    padding-top: $section-padding; 
+    padding-bottom: $section-padding; 
+    @include media-breakpoint-down(sm) {
+        padding-top: $mobile-section-padding; 
+        padding-bottom: $mobile-section-padding; 
+
+    }
+}
+
+html :where(.wp-block) {
+    max-width: none;
+}
+

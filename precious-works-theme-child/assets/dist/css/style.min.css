@@ -27,6 +27,10 @@
   margin: 24px 0 8px !important;
 }
 
+.media-modal .media-frame .media-search-input-label {
+  color: black;
+}
+
 :root,
 [data-bs-theme=light] {
   --bs-blue: #0d6efd;
@@ -6979,8 +6983,27 @@ progress {
     display: none !important;
   }
 }
-.wysiwyg p:last-child() {
+.wysiwyg p:last-child {
   margin-bottom: 0;
+}
+
+.nav-list-style {
+  list-style: none;
+  margin-left: 0;
+  margin-bottom: 0;
+  display: flex;
+  align-items: center;
+}
+.nav-list-style.column-list {
+  flex-direction: column;
+}
+.nav-list-style li {
+  line-height: 1;
+  margin-bottom: 0;
+}
+.nav-list-style li a {
+  text-decoration: none;
+  color: inherit;
 }
 
 .rounded-corners {
@@ -6992,26 +7015,26 @@ progress {
 }
 
 .background-primary {
-  color: black;
-  background-color: red;
+  color: #FFF0D8;
+  background-color: #D22700;
 }
 
 .background-secondary {
-  color: black;
-  background-color: red;
+  color: #FFF0D8;
+  background-color: #D22700;
 }
 
 .heading-font {
-  font-family: "Inter", sans-serif;
+  font-family: "acumin-pro-black", sans-serif;
 }
 
 .body-text-font {
-  font-family: "Georgia", serif;
+  font-family: "new-order", sans-serif;
 }
 
 .u-focus-style:focus, .u-focus-style:focus-visible {
   outline: none;
-  box-shadow: 0 0 0 3px rgba(0, 119, 204, 0.4);
+  box-shadow: 0 0 0 3px rgba(255, 240, 216, 0.4);
   border-radius: inherit;
 }
 
@@ -7037,8 +7060,8 @@ progress {
 
 .pw-solid-button {
   display: inline-block;
-  background-color: #333333;
-  border: solid 1px #333333;
+  background-color: #D22700;
+  border: solid 1px #D22700;
   color: #ffffff;
   line-height: 1;
   border-radius: 30px;
@@ -7055,8 +7078,8 @@ progress {
   font-weight: 600;
   border-radius: 30px;
   background-color: #ffffff;
-  color: #333333;
-  border: solid 1px #333333;
+  color: #D22700;
+  border: solid 1px #D22700;
   text-decoration: none;
 }
 .pw-solid-button:focus, .pw-solid-button:focus-visible {
@@ -7107,16 +7130,16 @@ progress {
 }
 
 body {
-  background-color: white;
-  font-family: "Inter", sans-serif;
+  background-color: #FFF0D8;
+  font-family: "acumin-pro-black", sans-serif;
   font-size: 16px;
   line-height: 1.6;
   color: #222;
 }
 
 .block-section {
-  padding-top: 60px;
-  padding-bottom: 60px;
+  padding-top: 90px;
+  padding-bottom: 90px;
 }
 @media (max-width: 575.98px) {
   .block-section {
@@ -7130,42 +7153,42 @@ html :where(.wp-block) {
 }
 
 h1, .h1 {
-  font-family: "Inter", sans-serif;
+  font-family: "acumin-pro-black", sans-serif;
   font-size: 2.5rem;
   font-weight: 700;
   line-height: 1.2;
 }
 
 h2, .h2 {
-  font-family: "Inter", sans-serif;
+  font-family: "acumin-pro-black", sans-serif;
   font-size: 2rem;
   font-weight: 700;
   line-height: 1.2;
 }
 
 h3, .h3 {
-  font-family: "Inter", sans-serif;
+  font-family: "acumin-pro-black", sans-serif;
   font-size: 1.75rem;
   font-weight: 700;
   line-height: 1.2;
 }
 
 h4, .h4 {
-  font-family: "Inter", sans-serif;
+  font-family: "acumin-pro-black", sans-serif;
   font-size: 1.5rem;
   font-weight: 700;
   line-height: 1.2;
 }
 
 h5, .h5 {
-  font-family: "Inter", sans-serif;
+  font-family: "acumin-pro-black", sans-serif;
   font-size: 1.25rem;
   font-weight: 700;
   line-height: 1.2;
 }
 
 h6, .h6 {
-  font-family: "Inter", sans-serif;
+  font-family: "acumin-pro-black", sans-serif;
   font-size: 1rem;
   font-weight: 600;
   line-height: 1.2;
@@ -7199,7 +7222,7 @@ ul li, ol li {
 }
 
 blockquote {
-  font-family: "Georgia", serif;
+  font-family: "new-order", sans-serif;
   font-style: italic;
   margin: 1.5em 0;
   padding-left: 1em;
@@ -7543,8 +7566,14 @@ small, .small {
 .title-area-container .title-area-row .title-area-col .title-area-content-wrapper {
   padding-bottom: 60px;
 }
+.title-area-container .title-area-row .title-area-col .title-area-content-wrapper svg {
+  margin-bottom: 40px;
+}
+.title-area-container .title-area-row .title-area-col .title-area-content-wrapper .title-wrapper {
+  padding-bottom: 25px;
+}
 .title-area-container .title-area-row .title-area-col .title-area-content-wrapper .subtitle-wrapper {
-  padding-top: 15px;
+  padding-top: 0;
 }
 .title-area-container .title-area-row .title-area-col .title-area-content-wrapper .subtitle-wrapper p {
   margin-bottom: 0;
@@ -7573,12 +7602,54 @@ small, .small {
 .reviews-section .reviews-container .reviews-row .reviews-col .masonry-review-card .review-content blockquote {
   all: unset;
   display: block;
-  font-family: "Inter", sans-serif;
+  font-family: "acumin-pro-black", sans-serif;
   font-style: normal;
   margin: 0;
   padding: 0;
   border: none;
   color: inherit;
+}
+
+.stats-section .stats-container .stats-row .stats-col {
+  padding-bottom: 60px;
+}
+.stats-section .stats-container .stats-row .stats-col .single-stat-wrapper {
+  width: 94%;
+  margin: auto;
+}
+.stats-section .stats-container .stats-row .stats-col .single-stat-wrapper .stat-icon-wrapper {
+  padding-bottom: 36px;
+}
+.stats-section .stats-container .stats-row .stats-col .single-stat-wrapper .stat-icon-wrapper img {
+  max-height: 148px;
+  width: auto;
+}
+.stats-section .stats-container .stats-row .stats-col .single-stat-wrapper .stat-number-wrapper .number {
+  color: #FFBE51;
+  text-align: center;
+  font-size: 96px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: normal;
+}
+.stats-section .stats-container .stats-row .stats-col .single-stat-wrapper .stat-unit-wrapper {
+  padding-bottom: 15px;
+}
+.stats-section .stats-container .stats-row .stats-col .single-stat-wrapper .stat-unit-wrapper .unit {
+  color: #FFF0D8;
+  text-align: center;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: normal;
+}
+.stats-section .stats-container .stats-row .stats-col .single-stat-wrapper .stat-content-wrapper {
+  color: #FFF0D8;
+  text-align: center;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: normal;
 }
 
 .recent-posts-section .recent-posts-container .recent-posts-row .recent-posts-col .single-post-tile .single-post-image-wrapper {
@@ -7593,7 +7664,7 @@ small, .small {
 }
 
 .accordions-container .accordions-row .accordions-col .single-accordion {
-  border: 2px solid #666666;
+  border: 2px solid #FFBE51;
   margin-bottom: 20px;
   color: inherit;
   overflow: hidden;
@@ -7613,7 +7684,7 @@ small, .small {
   transition: background-color 0.25s ease;
 }
 .accordions-container .accordions-row .accordions-col .single-accordion .accordion:hover {
-  background-color: rgb(216.75, 216.75, 216.75);
+  background-color: white;
 }
 .accordions-container .accordions-row .accordions-col .single-accordion .accordion svg {
   transition: transform 0.25s ease;

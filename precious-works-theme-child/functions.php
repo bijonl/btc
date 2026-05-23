@@ -38,6 +38,18 @@ add_action('wp_enqueue_scripts', 'pw_enqueue_glightbox_assets');
 add_action( 'wp_enqueue_scripts', 'pw_enqueue_scripts', 20 );
 add_action( 'enqueue_block_editor_assets', 'pw_enqueue_scripts' );
 
+function mytheme_enqueue_fonts() {
+
+    wp_enqueue_style(
+        'adobe-fonts',
+        'https://use.typekit.net/llg1mcf.css',
+        array(),
+        null
+    );
+
+}
+add_action('wp_enqueue_scripts', 'mytheme_enqueue_fonts');
+
 
 
 

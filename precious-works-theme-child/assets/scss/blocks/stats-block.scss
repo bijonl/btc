@@ -1,0 +1,50 @@
+.stats-section {
+    .stats-container {
+        .stats-row {
+            .stats-col {
+                padding-bottom: 60px; 
+                .single-stat-wrapper {
+                    width: 94%; 
+                    margin: auto; 
+                    .stat-icon-wrapper {
+                        padding-bottom: 36px; 
+                        img {
+                            max-height: 148px; 
+                            width: auto;
+                        }
+                    }
+                    .stat-number-wrapper {
+                        .number {
+                            color: $color-secondary;
+                            text-align: center;
+                            font-size: 96px;
+                            font-style: normal;
+                            font-weight: 900;
+                            line-height: normal;
+                        }
+                    }
+                    .stat-unit-wrapper {
+                        padding-bottom: 15px; 
+                        .unit {
+                            color: $color-accent;
+                            text-align: center;
+                            font-size: 32px;
+                            font-style: normal;
+                            font-weight: 900;
+                            line-height: normal;
+                        }
+                    }
+                    .stat-content-wrapper {
+                        color: $color-accent;
+                        text-align: center;
+                        font-size: 14px;
+                        font-style: normal;
+                        font-weight: 900;
+                        line-height: normal;
+
+                    }
+                }
+            }
+        }
+    }
+}
