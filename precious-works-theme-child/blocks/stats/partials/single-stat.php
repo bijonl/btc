@@ -7,7 +7,7 @@
 
     <?php if ($number) { ?>
         <div class="stat-number-wrapper">
-            <h3 class="number h2 mb-0"><?php echo esc_html($number); ?></h3>
+            <h3 class="color-secondary number h2 mb-0"><?php echo esc_html($number); ?></h3>
         </div>
     <?php } ?>
 

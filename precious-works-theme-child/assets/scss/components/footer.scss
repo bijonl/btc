@@ -1,0 +1,36 @@
+.site-footer {
+    padding-top: $footer-padding; 
+    padding-bottom: $footer-padding; 
+    color: $footer-color; 
+    .site-footer-content-container {
+        .site-footer-content-row {
+            padding-bottom: 70px; 
+            @import './partials/social-list'; 
+           
+        
+        }
+
+        .site-footer-logo-row {
+            padding-bottom: 70px; 
+
+            .footer-logo-wrapper {
+                img {
+                    height: 40px; 
+                }
+            }
+        }
+
+        .site-copyright-logo-row {
+            .footer-privacy-links-wrapper {
+                padding-top: 30px; 
+                display: flex;
+                justify-content: center; 
+                a {
+                    text-decoration: underline;
+                    margin-right: 8px; 
+                    margin-left: 8px;
+                }
+            }
+        }
+    }
+}

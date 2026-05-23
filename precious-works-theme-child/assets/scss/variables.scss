@@ -20,9 +20,8 @@ $base-font-size: 16px;
 $line-height-base: 1.6;
 
 // Text Colors
-$base-text-color: #222; 
+$base-text-color: #003F6A; 
 $heading-font-color: #222; 
-$link-color: #0066cc; 
 $color-muted: #666;
 $link-hover-color: #222; 
 
@@ -47,15 +46,15 @@ $solid-button-text-color-hover: $color-primary;
 $solid-button-border-color-hover: $color-primary; 
 
 // Footer Variables
-$footer-padding: 30px; 
+$footer-padding: 90px; 
 $footer-background-color: black; 
-$footer-color: white; 
+$footer-color: $color-accent; 
 
 // ===============================
 // Header Variables
 // ===============================
-$header-background: white;
-$header-logo-width: 65px;
+$header-background: $color-accent;
+$header-logo-width: 135px;
 $header-logo-height: auto;
 $header-link-color: inherit;
 $header-mobile-menu-bg: #eceff1;

@@ -4,7 +4,7 @@
     "fields": [
         {
             "key": "field_6888ff1a0a8f6",
-            "label": "Footer Logo",
+            "label": "Footer Content",
             "name": "",
             "aria-label": "",
             "type": "tab",
@@ -21,11 +21,32 @@
             "selected": 0
         },
         {
-            "key": "field_6888ff040a8f5",
-            "label": "Footer Logo",
-            "name": "footer_logo",
+            "key": "field_6a11d2f38fe65",
+            "label": "Footer Text",
+            "name": "footer_text",
             "aria-label": "",
-            "type": "image",
+            "type": "wysiwyg",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "allow_in_bindings": 0,
+            "tabs": "all",
+            "toolbar": "basic",
+            "media_upload": 0,
+            "delay": 0
+        },
+        {
+            "key": "field_6888ff040a8f5",
+            "label": "Footer Images",
+            "name": "footer_images",
+            "aria-label": "",
+            "type": "gallery",
             "instructions": "",
             "required": 0,
             "conditional_logic": 0,
@@ -36,6 +57,8 @@
             },
             "return_format": "id",
             "library": "all",
+            "min": "",
+            "max": "",
             "min_width": "",
             "min_height": "",
             "min_size": "",
@@ -43,7 +66,7 @@
             "max_height": "",
             "max_size": "",
             "mime_types": "",
-            "allow_in_bindings": 0,
+            "insert": "append",
             "preview_size": "medium"
         },
         {
@@ -274,6 +297,48 @@
             "placeholder": "",
             "prepend": "",
             "append": ""
+        },
+        {
+            "key": "field_6a11d35afc44c",
+            "label": "Footer Privacy Links",
+            "name": "footer_privacy_links",
+            "aria-label": "",
+            "type": "repeater",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "layout": "table",
+            "pagination": 0,
+            "min": 0,
+            "max": 0,
+            "collapsed": "",
+            "button_label": "Add Row",
+            "rows_per_page": 20,
+            "sub_fields": [
+                {
+                    "key": "field_6a11d36efc44d",
+                    "label": "Footer Link",
+                    "name": "footer_link",
+                    "aria-label": "",
+                    "type": "link",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "return_format": "array",
+                    "allow_in_bindings": 0,
+                    "parent_repeater": "field_6a11d35afc44c"
+                }
+            ]
         }
     ],
     "location": [
@@ -294,5 +359,8 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1753819207
+    "display_title": "",
+    "allow_ai_access": false,
+    "ai_description": "",
+    "modified": 1779553151
 }
