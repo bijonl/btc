@@ -21,6 +21,58 @@
             "endpoint": 0
         },
         {
+            "key": "field_6a11dc4dcfe7a",
+            "label": "Content Width",
+            "name": "content_width",
+            "aria-label": "",
+            "type": "range",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": 12,
+            "min": 1,
+            "max": 12,
+            "allow_in_bindings": 0,
+            "step": "",
+            "prepend": "",
+            "append": ""
+        },
+        {
+            "key": "field_6a11dc6dcfe7b",
+            "label": "Content Alignment",
+            "name": "content_alignment",
+            "aria-label": "",
+            "type": "select",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "mx-auto": "Center",
+                "me-auto": "Left",
+                "ms-auto": "Right"
+            },
+            "default_value": false,
+            "return_format": "value",
+            "multiple": 0,
+            "allow_null": 0,
+            "allow_in_bindings": 0,
+            "ui": 0,
+            "ajax": 0,
+            "placeholder": "",
+            "create_options": 0,
+            "save_options": 0
+        },
+        {
             "key": "field_687eae4801711",
             "label": "Content",
             "name": "content",
@@ -78,5 +130,8 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1755099859
+    "display_title": "",
+    "allow_ai_access": false,
+    "ai_description": "",
+    "modified": 1779555805
 }

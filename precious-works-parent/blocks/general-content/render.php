@@ -1,7 +1,12 @@
 <?php 
 include(locate_template('blocks/partials/global-block-variables.php')); 
 
-$content = get_field('content'); ?>
+$content = get_field('content'); 
+
+$content_width = get_field('content_width') ? get_field('content_width') : 12 ; 
+$content_alignment = get_field('content_alignment') ? get_field('content_alignment') : 'mx-auto'; 
+
+?>
 
 <?php $has_content = !empty($content) || $has_button_area || $has_title_area;
 
@@ -14,7 +19,7 @@ if(!$has_content) {
     <?php include(locate_template('blocks/partials/title-area.php')); ?>
     <div class="general-content-container container">
         <div class="general-content-row row">
-            <div class="general-content-col col-12">
+            <div class="general-content-col col-sm-<?php echo $content_width ?> <?php echo $content_alignment ?>">
                 <?php echo $content ?>
             </div>
         </div>
