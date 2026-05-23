@@ -3,5 +3,14 @@
 }
 
 .media-col {
-    margin-bottom: -6.59px
+    margin-bottom: -6.59px;   
+}
+
+
+iframe{
+    &[title="China Dashboard"] {
+        @include media-breakpoint-down(sm) {
+            width: 100%;
+        }
+    }
 }

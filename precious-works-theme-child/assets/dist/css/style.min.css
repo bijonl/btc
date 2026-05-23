@@ -7682,6 +7682,12 @@ small, .small {
   margin-bottom: -6.59px;
 }
 
+@media (max-width: 575.98px) {
+  iframe[title="China Dashboard"] {
+    width: 100%;
+  }
+}
+
 .recent-posts-section .recent-posts-container .recent-posts-row .recent-posts-col .single-post-tile .single-post-image-wrapper {
   padding-bottom: 20px;
 }
