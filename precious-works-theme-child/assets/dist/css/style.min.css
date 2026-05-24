@@ -8028,9 +8028,11 @@ small, .small {
   padding-left: 25%;
   padding-right: 25%;
 }
-@media (max-width: 575.98px) {
+@media (max-width: 1199.98px) {
   .economic-indicators-map {
     padding-bottom: 30px;
+    padding-left: 10%;
+    padding-right: 10%;
   }
 }
 
