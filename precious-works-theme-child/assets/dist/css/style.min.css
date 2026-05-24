@@ -754,7 +754,7 @@ progress {
   color: var(--bs-secondary-color);
 }
 
-.container, .economic-indicators-map,
+.container,
 .container-fluid,
 .container-xxl,
 .container-xl,
@@ -771,27 +771,27 @@ progress {
 }
 
 @media (min-width: 576px) {
-  .container-sm, .container, .economic-indicators-map {
+  .container-sm, .container {
     max-width: 540px;
   }
 }
 @media (min-width: 768px) {
-  .container-md, .container-sm, .container, .economic-indicators-map {
+  .container-md, .container-sm, .container {
     max-width: 720px;
   }
 }
 @media (min-width: 992px) {
-  .container-lg, .container-md, .container-sm, .container, .economic-indicators-map {
+  .container-lg, .container-md, .container-sm, .container {
     max-width: 960px;
   }
 }
 @media (min-width: 1200px) {
-  .container-xl, .container-lg, .container-md, .container-sm, .container, .economic-indicators-map {
+  .container-xl, .container-lg, .container-md, .container-sm, .container {
     max-width: 1140px;
   }
 }
 @media (min-width: 1400px) {
-  .container-xxl, .container-xl, .container-lg, .container-md, .container-sm, .container, .economic-indicators-map {
+  .container-xxl, .container-xl, .container-lg, .container-md, .container-sm, .container {
     max-width: 1320px;
   }
 }
@@ -7097,7 +7097,7 @@ progress {
   border-radius: 30px;
 }
 
-.container, .economic-indicators-map {
+.container {
   width: 100%;
   margin-right: auto;
   margin-left: auto;
@@ -7106,27 +7106,27 @@ progress {
 }
 
 @media (min-width: 576px) {
-  .container, .economic-indicators-map {
+  .container {
     max-width: 540px;
   }
 }
 @media (min-width: 768px) {
-  .container, .economic-indicators-map {
+  .container {
     max-width: 720px;
   }
 }
 @media (min-width: 992px) {
-  .container, .economic-indicators-map {
+  .container {
     max-width: 960px;
   }
 }
 @media (min-width: 1200px) {
-  .container, .economic-indicators-map {
+  .container {
     max-width: 1140px;
   }
 }
 @media (min-width: 1400px) {
-  .container, .economic-indicators-map {
+  .container {
     max-width: 1320px;
   }
 }
@@ -8024,10 +8024,18 @@ small, .small {
   font-size: 1.375rem;
 }
 
+.economic-indicators-map {
+  padding-left: 25%;
+  padding-right: 25%;
+}
 @media (max-width: 575.98px) {
   .economic-indicators-map {
     padding-bottom: 30px;
   }
+}
+
+.state-indicator-employment, .state-indicator-value-added {
+  color: #FFF0D8;
 }
 
 /*# sourceMappingURL=style.min.css.map */

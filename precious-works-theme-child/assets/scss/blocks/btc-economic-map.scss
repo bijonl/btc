@@ -161,8 +161,14 @@
 // }
 
 .economic-indicators-map {
-    @extend .container; 
+    // @extend .container; 
+    padding-left: 25%; 
+    padding-right: 25%; 
     @include media-breakpoint-down(sm) {
         padding-bottom: 30px; 
     }
+}
+
+.state-indicator-employment, .state-indicator-value-added {
+    color: $color-accent; 
 }
