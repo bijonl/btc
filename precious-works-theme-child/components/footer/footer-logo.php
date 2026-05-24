@@ -1,4 +1,4 @@
-<div class="footer-logo-wrapper d-flex  justify-content-center">
+<div class="footer-logo-wrapper d-flex justify-content-center">
 
     <?php if ($footer_images) { ?>
 

@@ -754,7 +754,7 @@ progress {
   color: var(--bs-secondary-color);
 }
 
-.container,
+.container, .economic-indicators-map,
 .container-fluid,
 .container-xxl,
 .container-xl,
@@ -771,27 +771,27 @@ progress {
 }
 
 @media (min-width: 576px) {
-  .container-sm, .container {
+  .container-sm, .container, .economic-indicators-map {
     max-width: 540px;
   }
 }
 @media (min-width: 768px) {
-  .container-md, .container-sm, .container {
+  .container-md, .container-sm, .container, .economic-indicators-map {
     max-width: 720px;
   }
 }
 @media (min-width: 992px) {
-  .container-lg, .container-md, .container-sm, .container {
+  .container-lg, .container-md, .container-sm, .container, .economic-indicators-map {
     max-width: 960px;
   }
 }
 @media (min-width: 1200px) {
-  .container-xl, .container-lg, .container-md, .container-sm, .container {
+  .container-xl, .container-lg, .container-md, .container-sm, .container, .economic-indicators-map {
     max-width: 1140px;
   }
 }
 @media (min-width: 1400px) {
-  .container-xxl, .container-xl, .container-lg, .container-md, .container-sm, .container {
+  .container-xxl, .container-xl, .container-lg, .container-md, .container-sm, .container, .economic-indicators-map {
     max-width: 1320px;
   }
 }
@@ -7097,7 +7097,7 @@ progress {
   border-radius: 30px;
 }
 
-.container {
+.container, .economic-indicators-map {
   width: 100%;
   margin-right: auto;
   margin-left: auto;
@@ -7106,27 +7106,27 @@ progress {
 }
 
 @media (min-width: 576px) {
-  .container {
+  .container, .economic-indicators-map {
     max-width: 540px;
   }
 }
 @media (min-width: 768px) {
-  .container {
+  .container, .economic-indicators-map {
     max-width: 720px;
   }
 }
 @media (min-width: 992px) {
-  .container {
+  .container, .economic-indicators-map {
     max-width: 960px;
   }
 }
 @media (min-width: 1200px) {
-  .container {
+  .container, .economic-indicators-map {
     max-width: 1140px;
   }
 }
 @media (min-width: 1400px) {
-  .container {
+  .container, .economic-indicators-map {
     max-width: 1320px;
   }
 }
@@ -7576,6 +7576,8 @@ small, .small {
 }
 .site-footer .site-footer-content-container .site-footer-logo-row .footer-logo-wrapper img {
   height: 40px;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 .site-footer .site-footer-content-container .site-copyright-logo-row .footer-privacy-links-wrapper {
   padding-top: 30px;
@@ -7674,17 +7676,26 @@ small, .small {
   line-height: normal;
 }
 
-.media-text-col {
-  padding-left: 45px;
+@media (min-width: 992px) {
+  .two-column-media-and-text-section .media-text-col {
+    padding-left: 45px;
+  }
 }
-
-.media-col {
+@media (max-width: 991.98px) {
+  .two-column-media-and-text-section .media-text-col {
+    padding-top: 45px;
+    padding-bottom: 45px;
+  }
+}
+.two-column-media-and-text-section .media-col {
   margin-bottom: -6.59px;
 }
 
 @media (max-width: 575.98px) {
   iframe[title="China Dashboard"] {
-    width: 100%;
+    max-width: 100%;
+    padding-left: 0;
+    padding-right: 0;
   }
 }
 
@@ -7853,6 +7864,170 @@ small, .small {
 }
 .wildcards-section .wildcards-container .wildcards-row .wildcards-col .single-wildcard-wrapper .button-area-wrapper a.pw-solid-button {
   min-width: auto;
+}
+
+.wp-block-btc-economic-indicators-map .economic-indicators-map {
+  position: relative;
+}
+
+.wp-block-btc-economic-indicators-map .map-container {
+  position: relative;
+  z-index: 1;
+}
+
+.wp-block-btc-economic-indicators-map .map-container g.state-button[data-state=puerto-rico] {
+  display: none;
+}
+
+.wp-block-btc-economic-indicators-map .map-container .local-map-svg {
+  display: block;
+  height: auto;
+  width: 100%;
+}
+
+.wp-block-btc-economic-indicators-map .map-container .local-map-text {
+  font-family: var(--wp--preset--font-family--roboto);
+  font-size: 10px;
+  font-weight: 700;
+  fill: var(--wp--preset--color--dk-blue);
+}
+
+.wp-block-btc-economic-indicators-map .map-container g.state-button {
+  cursor: pointer;
+  outline: none;
+}
+
+.wp-block-btc-economic-indicators-map .map-container g.state-button path, .wp-block-btc-economic-indicators-map .map-container g.state-button polygon {
+  fill: #fef1db;
+  stroke: #00406b;
+  stroke-width: 1;
+  transition: fill 0.3s ease;
+}
+
+.wp-block-btc-economic-indicators-map .map-container g.state-button:focus path, .wp-block-btc-economic-indicators-map .map-container g.state-button:focus polygon, .wp-block-btc-economic-indicators-map .map-container g.state-button:hover path, .wp-block-btc-economic-indicators-map .map-container g.state-button:hover polygon, .wp-block-btc-economic-indicators-map .map-container g.state-button[aria-expanded=true] path, .wp-block-btc-economic-indicators-map .map-container g.state-button[aria-expanded=true] polygon {
+  fill: #ffbe51;
+}
+
+.wp-block-btc-economic-indicators-map .state-indicators-container {
+  left: 0;
+  pointer-events: none;
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: 2;
+}
+
+.wp-block-btc-economic-indicators-map .state-indicators-overlay {
+  background: rgba(0, 0, 0, 0.5);
+  bottom: 0;
+  display: none;
+  left: 0;
+  position: fixed;
+  right: 0;
+  top: 0;
+  z-index: 2;
+}
+
+.wp-block-btc-economic-indicators-map .state-indicator-content-wrapper {
+  --arrow-top: -8px;
+  --arrow-bottom: auto;
+  --arrow-border: 8px solid transparent;
+  --arrow-border-top: none;
+  --arrow-border-bottom: 8px solid #00406b;
+  background: #00406b;
+  border-radius: 5px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+  display: none;
+  max-width: 16.875rem;
+  padding: 1.875rem;
+  pointer-events: auto;
+  position: absolute;
+  width: calc(100% - 40px);
+  z-index: 3;
+}
+
+.wp-block-btc-economic-indicators-map .state-indicator-content-wrapper:before {
+  border-bottom: var(--arrow-border-bottom);
+  border-left: var(--arrow-border);
+  border-right: var(--arrow-border);
+  border-top: var(--arrow-border-top);
+  bottom: var(--arrow-bottom);
+  content: "";
+  left: 50%;
+  position: absolute;
+  top: var(--arrow-top);
+  transform: translateX(-50%);
+}
+
+.wp-block-btc-economic-indicators-map .state-indicator-content {
+  background-color: #00406b;
+  text-align: center;
+}
+
+.wp-block-btc-economic-indicators-map .state-indicator-content .state-indicator-close {
+  background-color: transparent;
+  border: none;
+  color: #fef1db;
+  font-size: 1.125rem;
+  padding: 0.625rem;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.wp-block-btc-economic-indicators-map .state-indicator-content .state-indicator-close:hover {
+  cursor: pointer;
+}
+
+.wp-block-btc-economic-indicators-map .state-indicator-content h3, .wp-block-btc-economic-indicators-map .state-indicator-content .h3 {
+  color: #ffbe51;
+  font-family: var(--wp--preset--font-family--roboto);
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.wp-block-btc-economic-indicators-map .state-indicator-content ul {
+  list-style: none;
+  margin: 0 0 -0.75rem;
+  padding: 0;
+}
+
+.wp-block-btc-economic-indicators-map .state-indicator-content ul li {
+  margin-bottom: 0.75rem;
+}
+
+.wp-block-btc-economic-indicators-map .state-indicator-content li {
+  font-family: var(--wp--preset--font-family--roboto);
+  font-size: 0.875rem;
+}
+
+.wp-block-btc-economic-indicators-map .state-indicator-content li.state-indicator-percent-of-workforce, .wp-block-btc-economic-indicators-map .state-indicator-content li.state-indicator-state-gdp {
+  display: none;
+}
+
+.wp-block-btc-economic-indicators-map .state-indicator-content li.state-indicator-button .wp-block-button__link {
+  border: 1px solid #00406b;
+  border-radius: 3.125rem;
+  display: inline-block;
+  font-size: 1.125rem;
+  padding: 0.25rem 1rem;
+}
+
+.wp-block-btc-economic-indicators-map .state-indicator-content li.state-indicator-button .wp-block-button__link:focus, .wp-block-btc-economic-indicators-map .state-indicator-content li.state-indicator-button .wp-block-button__link:hover {
+  border: 1px solid #ffbe51;
+}
+
+.wp-block-btc-economic-indicators-map .state-indicator-content li span {
+  color: #ffbe51;
+  display: block;
+  font-family: var(--wp--preset--font-family--montserrat);
+  font-size: 1.375rem;
+}
+
+@media (max-width: 575.98px) {
+  .economic-indicators-map {
+    padding-bottom: 30px;
+  }
 }
 
 /*# sourceMappingURL=style.min.css.map */

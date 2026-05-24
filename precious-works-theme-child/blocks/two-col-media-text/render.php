@@ -19,11 +19,11 @@ $text_col_width = 'col-lg-6'; ?>
 
 <section <?php echo pw_block_section_classes($block) ?>>
     <div class="two-col-container">
-        <div class="two-col-row d-flex align-items-center">
-            <div class="two-col-col text-col text-start w-50">
+        <div class="two-col-row d-lg-flex align-items-center">
+            <div class="two-col-col text-col text-start w-sm-50">
                 <div class="media-text-container container">
                   <div class="media-text-row row">
-                    <div class="media-text-col col-sm-6">
+                    <div class="media-text-col col-xxl-8">
                        <?php echo pw_seo_heading(
                             $section_title, 
                             $section_title_tag, 
@@ -36,7 +36,7 @@ $text_col_width = 'col-lg-6'; ?>
                 </div>
                 
             </div>
-            <div class="two-col-col media-col w-50 <?php echo $column_order ?>">
+            <div class="two-col-col media-col w-sm-50 <?php echo $column_order ?>">
                 <video class="w-100 h-auto" width="320" height="240" autoplay muted loop playsinline>
                     <source src="<?php echo esc_url($media['url']); ?>" type="video/mp4">
                 </video>

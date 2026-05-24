@@ -1,16 +1,30 @@
-.media-text-col {
-    padding-left: 45px; 
-}
+.two-column-media-and-text-section {
 
-.media-col {
-    margin-bottom: -6.59px;   
-}
+    .media-text-col {
+        @include media-breakpoint-up(lg) {
+            padding-left: 45px; 
+        }
+        @include media-breakpoint-down(lg) {
+            padding-top: 45px; 
+            padding-bottom: 45px; 
+        }
+    }
 
+    .media-col {
+        margin-bottom: -6.59px;   
+    }
+
+
+    
+
+}
 
 iframe{
     &[title="China Dashboard"] {
         @include media-breakpoint-down(sm) {
-            width: 100%;
+            max-width: 100%;
+            padding-left: 0; 
+            padding-right: 0; 
         }
     }
 }
