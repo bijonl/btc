@@ -80,6 +80,11 @@
     'core/separator',
     'core/spacer',
     'core/shortcode',
+
+    // Embeds
+    'core/embed',
+    'core-embed/youtube',
+    'core-embed/vimeo',
 );
 
 

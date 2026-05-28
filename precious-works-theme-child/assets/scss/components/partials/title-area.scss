@@ -12,11 +12,14 @@ $button-row-spacing: 30px;
                 padding-bottom: $title-area-wrapper-spacing; 
                 .title-wrapper {
                     padding-bottom: 25px; 
-
+                    .section-title-heading {
+                        font-size: 56px; 
+                    }
                 }
                 .subtitle-wrapper {
                     padding-top: $big-title-spacing; 
                     p {
+                        font-size: 20px; 
                         margin-bottom: 0; 
                     }
                 }

@@ -8,8 +8,9 @@ if(!$has_content) {
     return; 
 } 
  ?>
- 
+
 <section <?php echo pw_block_section_classes($block) ?>>
+    <?php $display_title = 'h1' ?>
     <?php include(locate_template('blocks/partials/title-area.php')); ?> 
     <div class="stats-container container">
         <div class="stats-row row row-cols-1 row-cols-lg-3" role="list">

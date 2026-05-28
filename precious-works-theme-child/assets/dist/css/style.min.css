@@ -7410,7 +7410,7 @@ small, .small {
   align-items: center;
 }
 .site-header .site-header-container .site-header-row .site-header-logo-col .site-brand-logo-wrapper {
-  width: 135px;
+  width: 340px;
   height: auto;
 }
 .site-header .site-header-container .site-header-row .site-header-mobile-button-col nav,
@@ -7599,10 +7599,14 @@ small, .small {
 .title-area-container .title-area-row .title-area-col .title-area-content-wrapper .title-wrapper {
   padding-bottom: 25px;
 }
+.title-area-container .title-area-row .title-area-col .title-area-content-wrapper .title-wrapper .section-title-heading {
+  font-size: 56px;
+}
 .title-area-container .title-area-row .title-area-col .title-area-content-wrapper .subtitle-wrapper {
   padding-top: 0;
 }
 .title-area-container .title-area-row .title-area-col .title-area-content-wrapper .subtitle-wrapper p {
+  font-size: 20px;
   margin-bottom: 0;
 }
 
@@ -7674,12 +7678,15 @@ small, .small {
 }
 .stats-section .stats-container .stats-row .stats-col .single-stat-wrapper .stat-content-wrapper {
   text-align: center;
-  font-size: 14px;
+  font-size: 18px;
   font-style: normal;
   font-weight: 900;
   line-height: normal;
 }
 
+.two-column-media-and-text-section .media-text-col h2, .two-column-media-and-text-section .media-text-col .h2 {
+  font-size: 45px;
+}
 @media (min-width: 992px) {
   .two-column-media-and-text-section .media-text-col {
     padding-left: 45px;

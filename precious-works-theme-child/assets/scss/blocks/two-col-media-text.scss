@@ -1,6 +1,9 @@
 .two-column-media-and-text-section {
 
     .media-text-col {
+        h2 {
+            font-size: 45px; 
+        }
         @include media-breakpoint-up(lg) {
             padding-left: 45px; 
         }
