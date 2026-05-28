@@ -8,7 +8,7 @@ if(!$has_content) {
     return; 
 } 
  ?>
-
+ 
 <section <?php echo pw_block_section_classes($block) ?>>
     <?php include(locate_template('blocks/partials/title-area.php')); ?> 
     <div class="stats-container container">

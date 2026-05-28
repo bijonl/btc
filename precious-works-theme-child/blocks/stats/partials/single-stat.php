@@ -1,9 +1,24 @@
+<?php $animation = get_sub_field('animation'); ?>
+
 <div class="single-stat-wrapper">
+
+    <?php if($animation) { ?>
+        <div class="animation-icon-wrapper">
+        <?php echo do_shortcode('[am-lottieplayer 
+            src='.$animation.'
+            autoplay="true"
+            controls="false"
+            loop="true"
+        ]'); ?>
+        </div>
+    <?php } ?>
+
     <?php if ($icon) { ?>
         <div class="stat-icon-wrapper">
             <?php echo wp_get_attachment_image($icon['id'], 'full', false, array('class' => 'mw-100 h-auto')); ?>
         </div>
     <?php } ?>
+    
 
     <?php if ($number) { ?>
         <div class="stat-number-wrapper">

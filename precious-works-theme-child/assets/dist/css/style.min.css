@@ -7610,6 +7610,10 @@ small, .small {
   margin-top: 30px;
 }
 
+.icon-globe {
+  width: 85px;
+}
+
 .reviews-section .reviews-container .reviews-row .reviews-col .masonry-review-card {
   border: solid 2px black;
   padding: 15px;

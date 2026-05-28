@@ -43,6 +43,28 @@
             "rows_per_page": 20,
             "sub_fields": [
                 {
+                    "key": "field_6a1870b8193f2",
+                    "label": "Animation",
+                    "name": "animation",
+                    "aria-label": "",
+                    "type": "file",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "return_format": "url",
+                    "library": "all",
+                    "min_size": "",
+                    "max_size": "",
+                    "mime_types": ".json",
+                    "allow_in_bindings": 0,
+                    "parent_repeater": "field_68efd6331260c"
+                },
+                {
                     "key": "field_6a11bcc4e3110",
                     "label": "Icon",
                     "name": "icon",
@@ -156,5 +178,8 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1779547357
+    "display_title": "",
+    "allow_ai_access": false,
+    "ai_description": "",
+    "modified": 1779986646
 }
