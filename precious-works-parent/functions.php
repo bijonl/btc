@@ -68,36 +68,3 @@ add_filter( 'acf/settings/load_json', 'pw_acf_load_json_paths' );
 add_filter( 'gform_tabindex', '__return_false' );
 add_filter( 'gform_confirmation_anchor', '__return_false' );
 add_filter( 'gform_autofocus', '__return_false' );
-
-
-function childtheme_extend_allowed_blocks( $allowed_blocks, $editor_context ) {
-
-    // If parent already returned "true", keep it
-    if ( $allowed_blocks === true ) {
-        return $allowed_blocks;
-    }
-
-    // Make sure it's an array
-    if ( ! is_array( $allowed_blocks ) ) {
-        $allowed_blocks = [];
-    }
-
-    // Add your plugin blocks
-    $allowed_blocks[] = 'btc/economic-indicators-map';
-    $allowed_blocks[] = 'btc/state-indicators';
-
-    return $allowed_blocks;
-}
-
-add_filter(
-    'allowed_block_types_all',
-    'childtheme_extend_allowed_blocks',
-    20,
-    2
-);
-
-
-
-
-
-
